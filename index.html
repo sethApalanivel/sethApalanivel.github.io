@@ -1,15 +1,96 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Analytics Portfolio</title>
-</head><body>
-  <h1>Your Name</h1>
-  <p>Analytics & BI — Python (pandas, scikit-learn), SQL, Power BI/Tableau — Hobart/Launceston, TAS</p>
-  <ul>
-    <li><a href="/projects/wva-bounceback/">World Vision — BounceBack</a></li>
-    <li><a href="/projects/phishing-analytics/">Phishing Analytics</a></li>
-    <li><a href="/projects/vayuair-csat/">VayuAir — CSAT</a></li>
-    <li><a href="/projects/bank-churn/">European Bank — Churn</a></li>
-  </ul>
-</body></html>
+  <title>Seth A. Palanivel — Analytics Portfolio</title>
+  <meta name="description" content="Data & Analytics portfolio: case studies in modelling, BI dashboards, and decision support." />
+  <style>
+    :root { --max: 1000px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1.25rem; }
+    header { padding-top: 2.5rem; }
+    h1 { font-size: 2rem; margin: 0 0 .25rem; }
+    .sub { color: #444; margin: 0 0 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 16px; padding: 1rem; }
+    .card h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+    .meta { color:#555; font-size: .95rem; }
+    a.button { display:inline-block; padding:.5rem .75rem; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; }
+    nav a { margin-right: .75rem; }
+    footer { color:#555; padding-bottom: 3rem; }
+    .hero { margin-bottom: 1rem; }
+    .badge { font-size: .85rem; border:1px solid #e5e7eb; border-radius: 999px; padding: .2rem .6rem; margin-right:.25rem; }
+    .row { display:flex; gap:.5rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seth A. Palanivel</h1>
+    <p class="sub">Analytics & BI — Python (pandas, scikit‑learn), SQL, Power BI/Tableau · Hobart/Launceston, TAS</p>
+    <nav>
+      <a class="button" href="resume.pdf">Résumé (PDF)</a>
+      <a class="button" href="mailto:">Email</a>
+      <a class="button" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="button" href="https://github.com/">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Selected projects</h2>
+      <p>I turn messy data and stakeholder needs into models, dashboards, and decisions. Here are concise case studies with metrics and code/notebook links.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>World Vision Australia — BounceBack Campaign Optimisation</h2>
+        <p>Personalised donation asks via models (XGBoost/Random Forest) and role‑based dashboards.</p>
+        <p class="meta">Capacity‑Fit model (MAE ≈ $5.09, R² ≈ 0.31) · Contact‑Saturation model (MAE ≈ $1.83, R² ≈ 0.857) · Estimated response uplift 15–20%.</p>
+        <p><a href="projects/wva-bounceback/index.html">Case study</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Phishing Campaign Analytics — Power BI</h2>
+        <p>Role‑based dashboards tracking CTRs, report times, and completion to guide real‑time training interventions.</p>
+        <p class="meta">Exec/ops/training views · data refresh guidance · impact narratives.</p>
+        <p><a href="projects/phishing-analytics/index.html">Case study</a></p>
+      </article>
+
+      <article class="card">
+        <h2>VayuAir — Customer Satisfaction Prediction</h2>
+        <p>Python models to predict CSAT and surface drivers.</p>
+        <p class="meta">~30% accuracy improvement vs baseline; actionable drivers for service strategy.</p>
+        <p><a href="projects/vayuair-csat/index.html">Case study</a></p>
+      </article>
+
+      <article class="card">
+        <h2>European Bank — Churn/Inactivity Prediction</h2>
+        <p>Classifiers on ~10k records; operational retention lists with thresholds.</p>
+        <p class="meta">Up to 85% accuracy; calibration notes for business users.</p>
+        <p><a href="projects/bank-churn/index.html">Case study</a></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills snapshot</h2>
+      <div class="row">
+        <span class="badge">Python/pandas</span>
+        <span class="badge">SQL</span>
+        <span class="badge">scikit‑learn</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">Tableau</span>
+        <span class="badge">Forecasting</span>
+        <span class="badge">A/B testing</span>
+        <span class="badge">Retail & FMCG</span>
+        <span class="badge">CRM/Lifecycle</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025-09-15 · Built with GitHub Pages. This site contains only de‑identified and synthetic data where applicable.</p>
+  </footer>
+</body>
+</html>
+
