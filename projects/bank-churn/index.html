@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>European Bank — Churn/Inactivity Prediction — Case Study</title>
+  <meta name="description" content="European Bank — Churn/Inactivity Prediction case study." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.25rem; }
+    h1 { margin-top: 0; }
+    section { margin-bottom: 1rem; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; }
+    .kpi { border:1px solid #e5e7eb; padding:.75rem; border-radius:12px; }
+    a.button { display:inline-block; padding:.5rem .75rem; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; }
+    nav a { margin-right: .75rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="../../index.html" class="button">← Back</a>
+    <h1>European Bank — Churn/Inactivity Prediction</h1>
+
+    <section>
+      <h2>Problem</h2>
+      <p>Identify at‑risk customers and provide actionable retention lists with thresholds and calibration.</p>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <p>Tabular customer behaviour data (~10k rows).</p>
+    </section>
+
+    <section>
+      <h2>Approach</h2>
+      <p>Feature engineering; multiple classifiers; threshold tuning; simple calibration guidance for business.</p>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>Core metrics</strong><br>Up to 85% accuracy on hold‑out; ranked retention segments.</div>
+        <div class="kpi"><strong>Business impact</strong><br>Prioritised outreach to high‑risk customers; expected lift via targeted offers.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Artifacts</h2>
+      <p><a href="#">Code repository</a> · <a href="#">Notebook / report</a></p>
+      
+    </section>
+
+    <section>
+      <h2>What I’d improve next</h2>
+      <ul>
+        <li>Run A/B or geo‑holdout where feasible; track lift and guardrails.</li>
+        <li>Add monitoring for drift, fairness, and alerting on KPI regressions.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
